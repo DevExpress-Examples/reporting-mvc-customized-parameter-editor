@@ -115,28 +115,28 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="DevExpress.Data.v22.2" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v22.2" />
-    <Reference Include="DevExpress.RichEdit.v22.2.Core" />
-    <Reference Include="DevExpress.RichEdit.v22.2.Export" />
-    <Reference Include="DevExpress.Printing.v22.2.Core" />
-    <Reference Include="DevExpress.Web.v22.2" />
-    <Reference Include="DevExpress.Web.Mvc5.v22.2" />
-    <Reference Include="DevExpress.XtraReports.v22.2" />
-    <Reference Include="DevExpress.XtraReports.v22.2.Web" />
-    <Reference Include="DevExpress.XtraReports.v22.2.Web.WebForms" />
-    <Reference Include="DevExpress.Pdf.v22.2.Core" />
-    <Reference Include="DevExpress.Web.Resources.v22.2" />
-    <Reference Include="DevExpress.Charts.v22.2.Core" />
-    <Reference Include="DevExpress.CodeParser.v22.2" />
-	<Reference Include="DevExpress.Drawing.v22.2"/>
-    <Reference Include="DevExpress.DataAccess.v22.2" />
-    <Reference Include="DevExpress.Office.v22.2.Core" />
-    <Reference Include="DevExpress.PivotGrid.v22.2.Core" />
-    <Reference Include="DevExpress.Sparkline.v22.2.Core" />
-    <Reference Include="DevExpress.Xpo.v22.2" />
-    <Reference Include="DevExpress.XtraCharts.v22.2" />
-    <Reference Include="DevExpress.XtraGauges.v22.2.Core" />
+    <Reference Include="DevExpress.Data.v23.2" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v23.2" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Export" />
+    <Reference Include="DevExpress.Printing.v23.2.Core" />
+    <Reference Include="DevExpress.Web.v23.2" />
+    <Reference Include="DevExpress.Web.Mvc5.v23.2" />
+    <Reference Include="DevExpress.XtraReports.v23.2" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Web" />
+    <Reference Include="DevExpress.XtraReports.v23.2.Web.WebForms" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core" />
+    <Reference Include="DevExpress.Web.Resources.v23.2" />
+    <Reference Include="DevExpress.Charts.v23.2.Core" />
+    <Reference Include="DevExpress.CodeParser.v23.2" />
+	<Reference Include="DevExpress.Drawing.v23.2"/>
+    <Reference Include="DevExpress.DataAccess.v23.2" />
+    <Reference Include="DevExpress.Office.v23.2.Core" />
+    <Reference Include="DevExpress.PivotGrid.v23.2.Core" />
+    <Reference Include="DevExpress.Sparkline.v23.2.Core" />
+    <Reference Include="DevExpress.Xpo.v23.2" />
+    <Reference Include="DevExpress.XtraCharts.v23.2" />
+    <Reference Include="DevExpress.XtraGauges.v23.2.Core" />
     <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.7\lib\net45\WebMatrix.Data.dll</HintPath>
     </Reference>
@@ -226,7 +226,33 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="App_Data\NWind.mdf" />
+    <Content Include="App_Data\NWind_log.ldf">
+      <DependentUpon>NWind.mdf</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ace.js" />
+    <Content Include="Scripts\cldr.event.js" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr.supplemental.js" />
+    <Content Include="Scripts\cldr.unresolved.js" />
+    <Content Include="Scripts\ext-language_tools.js" />
+    <Content Include="Scripts\globalize.currency.js" />
+    <Content Include="Scripts\globalize.date.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize.message.js" />
+    <Content Include="Scripts\globalize.number.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <None Include="packages.config" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-3.3.0.debug.js" />
+    <Content Include="Scripts\knockout-3.3.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Web.config" />
     <Content Include="Views\_ViewStart.vbhtml" />
