@@ -581,7 +581,7 @@ public class TestReport : DevExpress.XtraReports.UI.XtraReport
     }
 
 
-    private void tableCell4_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e)
+    private void tableCell4_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
     {
         (sender as XRTableCell).Text += " Customized";
     }
