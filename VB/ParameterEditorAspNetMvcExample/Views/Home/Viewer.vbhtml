@@ -12,6 +12,7 @@
     var columns = [{ dataField: "name", caption: "Name" }, { dataField: "title", caption: "Title" }];
 
     var p_employeeID_editor;
+    var parametersModel;
 
     function customizeParameterEditors(s, e) {
         if (e.parameter.type === 'System.DateTime') {
@@ -24,7 +25,7 @@
                 min: new Date(2000, 0, 1),
                 message: "We do not retain data prior to the year 2000."
             };
-            e.info.validationRules=[validationRule];
+            e.info.validationRules = [validationRule];
         };
         if (e.parameter.name == "p_employeeID") {
             e.info.editor = { header: 'employeeID-custom-editor' };
@@ -36,22 +37,22 @@
     function onTreeListSelectionChanged(e) {
         if (e.selectedRowsData.length > 0) {
             var selectedEmployeeID = e.selectedRowsData[0].id;
-            WebDocumentViewer1.GetParametersModel().p_employeeID(selectedEmployeeID);
+            parametersModel.p_employeeID = selectedEmployeeID;
         }
     };
     function onParametersReset(s, e) {
         p_employeeID_editor.deselectAll();
     };
-
-    function setPanelWidth(s, e) {
-        e.tabPanel.width(500);
+    function onBeforeRender(s, e) {
+        e.tabPanel.width = 500;
+        parametersModel = e.parametersModel;
     };
 </script>
 
 @Html.DevExpress().WebDocumentViewer(
                 Sub(settings)
                     settings.Name = "WebDocumentViewer1"
-                    settings.ClientSideEvents.BeforeRender = "setPanelWidth"
+                    settings.ClientSideEvents.BeforeRender = "onBeforeRender"
                     settings.ClientSideEvents.CustomizeParameterEditors = "customizeParameterEditors"
                     settings.ClientSideEvents.ParametersReset = "onParametersReset"
                 End Sub).Bind("TestReport").GetHtml()
