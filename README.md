@@ -6,7 +6,7 @@
 
 This example demonstrates how to customize a standard parameter editor and add a custom editor for a standard parameter type. 
 
-![](images/Customized-Parameter-Editors.png)
+![](./Images/Customized-Parameter-Editors.png)
 
 ## Files to look at
 
