@@ -16,7 +16,7 @@ This example demonstrates how to customize a standard parameter editor and add a
 - [Viewer.cshtml](CS/ParameterEditorAspNetMvcExample/Views/Home/Viewer.cshtml) (VB: [Viewer.vbhtml](VB/ParameterEditorAspNetMvcExample/Views/Home/Viewer.vbhtml))
 - [Designer.cshtml](CS/ParameterEditorAspNetMvcExample/Views/Home/Viewer.cshtml) (VB: [Designer.vbhtml](VB/ParameterEditorAspNetMvcExample/Views/Home/Viewer.vbhtml))
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-mvc-customized-parameter-editor&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-mvc-customized-parameter-editor&~~~was_helpful=no)
 
